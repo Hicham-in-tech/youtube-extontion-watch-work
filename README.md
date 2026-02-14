@@ -24,26 +24,6 @@ A professional Chrome extension that enables Picture-in-Picture mode for any vid
 4. Select the extension folder
 5. The extension icon should appear in your toolbar
 
-### Method 2: Create Icons
-
-You need to create icon images for the extension. Here's how:
-
-1. Create an `icons` folder in the extension directory
-2. Create PNG images with these sizes:
-   - icon16.png (16x16 pixels)
-   - icon32.png (32x32 pixels)
-   - icon48.png (48x48 pixels)
-   - icon128.png (128x128 pixels)
-
-**Icon Design Suggestion**: Use a simple icon showing a rectangle with a smaller rectangle in the corner (representing Picture-in-Picture mode).
-
-You can use free tools like:
-- [Canva](https://www.canva.com/)
-- [Figma](https://www.figma.com/)
-- [GIMP](https://www.gimp.org/)
-
-Or use the provided SVG in the popup as reference.
-
 ## 🎯 How to Use
 
 ### Using the Extension Popup:
