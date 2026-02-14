@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 360px;
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    background-color: #0f172a;
+    color: #e2e8f0;
+}
+
+.container {
+    padding: 24px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #1e293b;
+    padding-bottom: 16px;
+}
+
+.logo-container {
+    width: 44px;
+    height: 44px;
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.logo {
+    width: 26px;
+    height: 26px;
+    color: #fff;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #f8fafc;
+    letter-spacing: -0.025em;
+}
+
+.description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #94a3b8;
+    margin-bottom: 24px;
+}
+
+.pip-button {
+    width: 100%;
+    padding: 14px 20px;
+    background: #3b82f6;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    outline: none;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.pip-button:hover {
+    background: #2563eb;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.25);
+}
+
+.pip-button:active {
+    transform: translateY(0);
+    background: #1d4ed8;
+}
+
+.button-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.status {
+    margin-top: 16px;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    text-align: center;
+    display: none;
+    font-weight: 500;
+    animation: fadeIn 0.2s ease;
+}
+
+.status.show {
+    display: block;
+}
+
+.status.success {
+    background: rgba(16, 185, 129, 0.1);
+    color: #34d399;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.status.error {
+    background: rgba(239, 68, 68, 0.1);
+    color: #f87171;
+    border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.info {
+    margin-top: 24px;
+    padding: 16px;
+    background: #1e293b;
+    border-radius: 8px;
+    border: 1px solid #334155;
+}
+
+.tip {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #cbd5e1;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.shortcuts {
+    margin-top: 20px;
+    padding: 16px;
+    background: #1e293b;
+    border-radius: 8px;
+    border: 1px solid #334155;
+}
+
+.shortcuts h3 {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #64748b;
+    margin-bottom: 12px;
+    letter-spacing: 0.05em;
+}
+
+.shortcut-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shortcut-key {
+    padding: 4px 8px;
+    background: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #e2e8f0;
+    font-family: inherit;
+    min-width: 60px;
+    text-align: center;
+}
+
+.shortcut-desc {
+    font-size: 13px;
+    color: #94a3b8;
+}
+
+.footer {
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid #1e293b;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 12px;
+    color: #64748b;
+    margin-bottom: 4px;
+}
+
+.creator {
+    color: #e2e8f0;
+    font-weight: 600;
+}
+
+.contact-link {
+    font-size: 12px;
+    color: #3b82f6;
+    text-decoration: none;
+    transition: color 0.2s;
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.contact-link:hover {
+    color: #60a5fa;
+    background: rgba(59, 130, 246, 0.1);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(4px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    animation: fadeIn 0.3s ease-out;
+}
